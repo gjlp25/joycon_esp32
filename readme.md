@@ -1,6 +1,6 @@
 # Joy-Con ESP32 Interface
 
-This project enables interfacing Nintendo Joy-Con controllers with an ESP32 microcontroller using the Bluepad32 library. It provides comprehensive button mapping, analog stick handling, and calibration features for Joy-Con controllers.
+This project enables interfacing Nintendo Joy-Con controllers with an ESP32 microcontroller. Based on [Rachel DeBarros' article](https://racheldebarros.com/connect-your-game-controller-to-an-esp32/), the project utilizes the [Bluepad32 Arduino library](https://github.com/ricardoquesada/bluepad32) to provide comprehensive button mapping, analog stick handling, and calibration features for Joy-Con controllers.
 
 ## Documentation
 
