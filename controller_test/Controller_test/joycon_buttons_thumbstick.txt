@@ -1,4 +1,4 @@
-
+Joycon button mappings and thumbstick assignments
   
   //== JoyCon A button = 0x0001 ==//
  
