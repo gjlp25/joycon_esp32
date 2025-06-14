@@ -1,0 +1,52 @@
+
+  
+  //== JoyCon A button = 0x0001 ==//
+ 
+
+  //== JoyCon X button = 0x0002 ==//
+  
+
+  //== JoyCon B button = 0x0004 ==//
+  
+
+  //== JoyCon Y button = 0x0008 ==//
+  
+
+  //== JoyCon SL button = 0x0010 ==//
+  
+
+  //== JoyCon SR button = 0x0020 ==//
+  
+
+  //== JoyCon R button = 0x0040 ==//
+  
+
+  //== JoyCon ZR button = 0x0080 ==//
+
+
+  //== JoyCon Thumbstick button = 0x0100 ==//
+
+  
+  //== JoyCon Home button = misc: 0x02 ==//
+
+
+  //== JoyCon Plus button = misc: 0x04 ==//
+
+  
+  //== JOYSTICK MOVEMENT ==//
+ 
+  
+  Neutral:
+  axis L: -55, 13
+
+  Left:
+  axis L: -417, -30
+
+  Right:
+  axis L: 305, -29
+
+  Up:
+  axis L: -50, -440
+
+  Down:
+  axis L: -100, 440

@@ -1,0 +1,161 @@
+# Project Intelligence: Joy-Con ESP32 Interface
+
+## Project Patterns
+
+### 1. Code Organization
+- Main implementation in joycon_esp32.ino
+- Test code in controller_test directory
+- Movement-specific code in joycon_esp32_movements directory
+- Memory bank documentation in memory-bank directory
+
+### 2. Implementation Patterns
+- Button state tracking uses static bool pairs (previous/current)
+- Analog processing includes calibration and deadzone handling
+- Serial output for debugging and monitoring
+- Watchdog-compliant timing with 150ms delay
+
+### 3. Naming Conventions
+- Constants in UPPERCASE with underscores
+- Functions in camelCase
+- Button masks in hexadecimal format
+- Clear, descriptive variable names
+
+## Critical Implementation Paths
+
+### 1. Controller Connection
+```cpp
+BP32.setup(&onConnectedController, &onDisconnectedController);
+BP32.forgetBluetoothKeys();
+BP32.enableVirtualDevice(false);
+```
+
+### 2. Button Processing
+```cpp
+static bool prevButton = false;
+bool currentButton = (ctl->buttons() & BUTTON_MASK);
+if (currentButton && !prevButton) {
+    // Handle press
+}
+```
+
+### 3. Analog Processing
+```cpp
+int calibratedX = ctl->axisX() - JOYCON_IDLE_X;
+int calibratedY = ctl->axisY() - JOYCON_IDLE_Y;
+if (abs(calibratedX) < DEADZONE_THRESHOLD && abs(calibratedY) < DEADZONE_THRESHOLD) {
+    // Handle deadzone
+}
+```
+
+## Known Challenges
+
+### 1. Timing Sensitivity
+- Main loop requires 150ms delay for stability
+- Watchdog timer must be satisfied
+- Balance needed between responsiveness and reliability
+
+### 2. Calibration Requirements
+- Joy-Con has specific idle positions
+- Deadzone handling is critical
+- Movement thresholds need careful tuning
+
+### 3. Connection Management
+- Multiple controller support requires array management
+- Disconnection handling must be robust
+- Bluetooth keys cleared on startup
+
+## Project Evolution
+
+### 1. Initial Implementation
+- Basic button mapping
+- Simple analog handling
+- Debug output
+
+### 2. Current State
+- Complete button mapping
+- Calibrated analog input
+- Movement intensity calculation
+- Multiple controller support
+
+### 3. Future Direction
+- Enhanced calibration
+- Performance optimization
+- Extended debugging
+- Configuration system
+
+## Tool Usage Patterns
+
+### 1. Development Tools
+- Arduino IDE or PlatformIO
+- Serial Monitor for debugging
+- Memory bank documentation
+
+### 2. Testing Approach
+- Serial output for verification
+- Manual input testing
+- Connection/disconnection testing
+
+### 3. Documentation Strategy
+- Memory bank for project knowledge
+- Inline comments for implementation details
+- Serial output for runtime information
+
+## Project Preferences
+
+### 1. Code Style
+- Clear function names
+- Comprehensive error handling
+- Serial debugging output
+- Consistent formatting
+
+### 2. Implementation Choices
+- State tracking for all buttons
+- Calibration with constants
+- Movement detection thresholds
+- Deadzone implementation
+
+### 3. Documentation Focus
+- Technical implementation details
+- User experience considerations
+- System architecture
+- Progress tracking
+
+## Development Workflow
+
+### 1. Feature Implementation
+1. Plan in memory bank
+2. Implement core functionality
+3. Add error handling
+4. Include debug output
+5. Test and verify
+6. Update documentation
+
+### 2. Testing Process
+1. Basic functionality verification
+2. Input response testing
+3. Connection stability check
+4. Error handling verification
+5. Performance assessment
+
+### 3. Documentation Update
+1. Update relevant memory bank files
+2. Add inline code comments
+3. Update progress tracking
+4. Document known issues
+
+## Error Handling Approach
+
+### 1. Connection Errors
+- Check for available slots
+- Verify controller presence
+- Handle disconnection gracefully
+
+### 2. Input Validation
+- Range checking for analog inputs
+- Deadzone filtering
+- Button state verification
+
+### 3. System Issues
+- Watchdog timer compliance
+- Memory management
+- Bluetooth stability

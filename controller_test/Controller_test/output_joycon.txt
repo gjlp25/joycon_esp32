@@ -1,0 +1,14 @@
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:-16000 y:-16000 z: 14000, accel x:   311 y:    72 z:  4061
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x: -9000 y:-15000 z: 12000, accel x:   313 y:    61 z:  4073
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x: -3000 y:-13000 z: 12000, accel x:   310 y:    69 z:  4070
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x: -9000 y:-14000 z: 13000, accel x:   314 y:    76 z:  4071
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -96,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  2000 y:-14000 z: 13000, accel x:   314 y:    74 z:  4071
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  2000 y:-14000 z: 13000, accel x:   314 y:    82 z:  4074
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  3000 y:-14000 z: 12000, accel x:   312 y:    84 z:  4079
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  3000 y:-14000 z: 12000, accel x:   310 y:    74 z:  4074
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  9000 y:-13000 z: 12000, accel x:   313 y:    83 z:  4075
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x: -7000 y:-14000 z: 13000, accel x:   312 y:    82 z:  4073
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  9000 y:-13000 z: 10000, accel x:   315 y:    73 z:  4070
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   49, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  9000 y:-14000 z: 12000, accel x:   316 y:    77 z:  4067
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -97,   50, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x: -6000 y:-14000 z: 14000, accel x:   316 y:    78 z:  4072
+idx=0, dpad: 0x00, buttons: 0x0000, axis L:  -96,   49, axis R:    0,    0, brake:    0, throttle:    0, misc: 0x00, gyro x:  5000 y:-14000 z: 12000, accel x:   314 y:    91 z:  4066
